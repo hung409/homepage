@@ -1,3 +1,5 @@
+import './test.js';
+
 function writecom() {
   let element = document.createElement('div');
   element.innerHTML = 'Hello Webpack';
