@@ -22,9 +22,27 @@ module.exports = {
   ],
   module: {
     rules: [
-      { test: /\.css$/, use: 'css-loader' },
-      { test: /\.scss$/, use: 'sass-loader' },
-      { test: /\.vue$/, use: 'vue-loader' }
+      {
+        test: /\.(sa|sc|c)ss$/,
+        use: [
+          'style-loader',
+          'css-loader',
+          'sass-loader'
+        ]
+      },
+      { test: /\.vue$/, use: 'vue-loader' },
+      {
+        test: /\.(png|jpe?g|gif|svg|ico)$/,
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              useRelativePath: true,
+              limit: 10000
+            }
+          }
+        ]
+      }
     ]
   },
   devServer: {
