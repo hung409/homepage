@@ -3,7 +3,7 @@
     <ul>
       <li class="item" v-for="entry in repos_list" :key="entry.title">
         <div class="title">{{ entry.title }}</div>
-        <img src="../assets/logo.png"/>
+        <img alt="Vue logo" src="../assets/logo.png" />
         <div class="tag">{{ entry.tag }}</div>
         <div class="info">{{ entry.info }}</div>
         <b-button class="more" size="sm" variant="info">{{ $t('more') }}</b-button>
