@@ -3,7 +3,7 @@
     <ul>
       <li class="item" v-for="entry in repos_list" :key="entry.title">
         <div class="title">{{ entry.title }}</div>
-        <img :src="entry.image"/>
+        <img src="../assets/logo.png"/>
         <div class="tag">{{ entry.tag }}</div>
         <div class="info">{{ entry.info }}</div>
         <b-button class="more" size="sm" variant="info">{{ $t('more') }}</b-button>
@@ -22,7 +22,7 @@ export default {
       repos_list: [
         {
           title: 'docker_webserver',
-          image: '../assets/logo.png',
+          image: '../src/assets/logo.png',
           tag: '#Docker #PHP #Nginx #MariaDB',
           info: 'Docker Server Setting'
         }
