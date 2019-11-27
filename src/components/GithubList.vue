@@ -73,9 +73,6 @@ ul {
       .info {
         margin: 10px 0;
       }
-      .more {
-
-      }
     }
   }
 }

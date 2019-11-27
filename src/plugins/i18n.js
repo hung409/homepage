@@ -6,7 +6,8 @@ Vue.use(VueI18n);
 const messages = {
   en: {
     lang: `Lang`,
-    welcomeMsg: `Welcome to Your Vue.js App`,
+    goRepository: `Go Repository`,
+    more: `More`,
     menuAboutMe: `About me`,
     menuProject: `Project`,
     menuProjectSubSmartFactory: `SmartFactory`,
@@ -38,7 +39,6 @@ const messages = {
   },
   kr: {
     lang: `언어`,
-    welcomeMsg: `Vue.js App에 오신 것을 환영합니다`,
     goRepository: `저장소 바로가기`,
     more: `더보기`,
     menuAboutMe: `내 정보`,
