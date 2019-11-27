@@ -3,7 +3,7 @@
     <ul>
       <li class="item" v-for="entry in repos_list" :key="entry.title">
         <div class="title">{{ entry.title }}</div>
-        <img alt="Vue logo" src="../assets/logo.png" />
+        <img alt="Vue logo" :src="entry.image" />
         <div class="tag">{{ entry.tag }}</div>
         <div class="info">{{ entry.info }}</div>
         <b-button class="more" size="sm" variant="info">{{ $t('more') }}</b-button>
@@ -14,7 +14,6 @@
 </template>
 
 <script>
-
 export default {
   name: 'github_list',
   data: () => {
@@ -22,7 +21,7 @@ export default {
       repos_list: [
         {
           title: 'docker_webserver',
-          image: '../src/assets/logo.png',
+          image: require('@/assets/logo.png'),
           tag: '#Docker #PHP #Nginx #MariaDB',
           info: 'Docker Server Setting'
         }
