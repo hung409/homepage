@@ -3,13 +3,14 @@
     <ul>
       <li class="item" v-for="entry in repos_list" :key="entry.title">
         <div class="title">{{ entry.title }}</div>
-        <img alt="Vue logo" :src="entry.image" />
+        <b-img :src="entry.image" fluid :alt="entry.title"></b-img>
         <div class="tag">{{ entry.tag }}</div>
-        <div class="info">{{ entry.info }}</div>
-        <b-button class="more" size="sm" variant="info">{{ $t('more') }}</b-button>
+        <div class="info" v-html="entry.info"></div>
+        <b-link :href="entry.link" target="_blank">
+          <b-button class="more" size="sm" variant="info">{{ $t('more') }}</b-button>
+        </b-link>
       </li>
     </ul>
-    
   </div>
 </template>
 
@@ -20,10 +21,39 @@ export default {
     return {
       repos_list: [
         {
+          title: 'OverCam',
+          image: require('@/assets/OverCam.png'),
+          tag: '#Android #Kotlin',
+          info: 'Before & after photos application',
+          link: 'https://github.com/shyuni4u/serialTest2.git'
+        },
+        {
           title: 'docker_webserver',
-          image: require('@/assets/logo.png'),
+          image: require('@/assets/docker.jpg'),
           tag: '#Docker #PHP #Nginx #MariaDB',
-          info: 'Docker Server Setting'
+          info: 'Docker Server Setting',
+          link: 'https://github.com/shyuni4u/docker_webserver.git'
+        },
+        {
+          title: 'homepage',
+          image: require('@/assets/logo.png'),
+          tag: '#HTML #Vuejs #CSS #Javascript',
+          info: 'Github Page used vue-cli 3',
+          link: 'https://github.com/shyuni4u/homepage.git'
+        },
+        {
+          title: 'QuizPlus',
+          image: require('@/assets/QuizPlus.png'),
+          tag: '#JSP #Phonegap',
+          info: '2012. Dongguk Univ. Software Engineering Project<br/>Quiz Application',
+          link: 'https://github.com/shyuni4u/QuizPlus.git'
+        },
+        {
+          title: 'temp_server',
+          image: require('@/assets/temp_server.png'),
+          tag: '#Docker #Vuejs #Golang #MariaDB',
+          info: 'Golang Test Server',
+          link: 'https://github.com/shyuni4u/temp_server.git'
         }
       ]
     }
@@ -62,10 +92,10 @@ ul {
         -webkit-box-shadow: 0 0 5px rgba(0,0,0,.4);
         box-shadow: 0 0 5px rgba(0,0,0,.4);
       }
-      .used_language {
+      .tag {
         padding: 0;
         margin: 10px 0;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         font-weight: 700;
         color: grey;
       }

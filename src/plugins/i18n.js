@@ -8,6 +8,7 @@ const messages = {
     lang: `Lang`,
     goRepository: `Go Repository`,
     more: `More`,
+    shortcut: 'Shortcut',
     menuAboutMe: `About me`,
     menuProject: `Project`,
     menuProjectSubSmartFactory: `SmartFactory`,
@@ -29,18 +30,23 @@ const messages = {
       <br/>[SmartFactory] IJS
       <br/>[SmartFactory] NEDEC
       <br/>[SmartFactory] DHAC
-      <br/>[SmartFactory] 원풍
-      <br/>[SmartFactory] 청주폴리텍
-      <br/>[SmartFactory] 주강로보테크
-      <br/>[SmartFactory] 성암기연
-      <br/>[SmartFactory] 탑아이엔디
-      <br/>[SmartFactory] 펠릭스테크
+      <br/>Windows -> Linux Server Change Setting
+      <br/>Signal acquisition used Focas library(FANUC)
+      <br/>[SmartFactory] Wonpoong
+      <br/>[SmartFactory] KOREA POLYTECHNICS Training Setting
+      <br/>Add Web Designer Responsibilities
+      <br/>[SmartFactory] JRT
+      <br/>[SmartFactory] Sungam
+      <br/>[SmartFactory] TOPIND
+      <br/>[SmartFactory] FELIX
+      <br/>[SmartFactory] DONGYANG MIRAE Univ. Training Setting
       <br/>[Android] OverCam`,
   },
   kr: {
     lang: `언어`,
     goRepository: `저장소 바로가기`,
     more: `더보기`,
+    shortcut: '바로가기',
     menuAboutMe: `내 정보`,
     menuProject: `프로젝트`,
     menuProjectSubSmartFactory: `스마트팩토리`,
@@ -62,12 +68,16 @@ const messages = {
       <br/>[스마트팩토리] IJS
       <br/>[스마트팩토리] NEDEC
       <br/>[스마트팩토리] DHAC
-      <br/>[스마트팩토리] 원풍
-      <br/>[스마트팩토리] 청주폴리텍
+      <br/>윈도우 -> 리눅스 서버 환경 구축
+      <br/>Focas 라이브러리 (FANUC)를 이용한 신호취득
+      <br/>[스마트팩토리] 원풍산업
+      <br/>[스마트팩토리] 청주폴리텍 체험환경
+      <br/>반응형 웹 디자인 정리
       <br/>[스마트팩토리] 주강로보테크
       <br/>[스마트팩토리] 성암기연
       <br/>[스마트팩토리] 탑아이엔디
       <br/>[스마트팩토리] 펠릭스테크
+      <br/>[스마트팩토리] 동양미래대학 체험환경
       <br/>[안드로이드] 오버캠`,
   }
 };

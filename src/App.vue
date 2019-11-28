@@ -91,11 +91,13 @@ export default {
           title: 'menuGithub',
           sub: []
         },
+        /*
         {
           linkTo: '/etc',
           title: 'menuEtc',
           sub: []
         }
+        */
       ],
       languages: [
         {
