@@ -3,7 +3,9 @@
     <ul>
       <li class="item" v-for="entry in repos_list" :key="entry.title">
         <div class="title">{{ entry.title }}</div>
-        <b-img :src="entry.image" fluid :alt="entry.title"></b-img>
+        <a :href="entry.image">
+          <b-img :src="entry.image" fluid :alt="entry.title"></b-img>
+        </a>
         <div class="tag">{{ entry.tag }}</div>
         <div class="info" v-html="entry.info"></div>
         <b-link :href="entry.link" target="_blank">
@@ -33,6 +35,13 @@ export default {
           tag: '#Docker #PHP #Nginx #MariaDB',
           info: 'Docker Server Setting',
           link: 'https://github.com/shyuni4u/docker_webserver.git'
+        },
+        {
+          title: 'Gantt.js',
+          image: require('@/assets/gantt.js.png'),
+          tag: '#HTML #vanilla-js #CSS',
+          info: 'Gantt chart used vanilla-js',
+          link: 'https://github.com/shyuni4u/gantt.js.git'
         },
         {
           title: 'homepage',
