@@ -24,6 +24,7 @@
           style="margin: 20px;">
         <b-card-text>
           <b-carousel
+            v-model="entry.slide"
             controls
             indicators
             background="#ababab"
@@ -31,13 +32,17 @@
             img-height="480"
             style="text-shadow: 2px 2px 4px #333;"
           >
-            <b-carousel-slide
+            <a
               v-for="sub_entry in entry.images"
               :key="sub_entry.image"
-              :caption="sub_entry.company + ', ' + sub_entry.date"
-              :text="sub_entry.description"
-              :img-src="sub_entry.image"
-            ></b-carousel-slide>
+              :href="sub_entry.image"
+              >
+              <b-carousel-slide
+                :caption="sub_entry.company + ', ' + sub_entry.date"
+                :text="sub_entry.description"
+                :img-src="sub_entry.image"
+              ></b-carousel-slide>
+            </a>
           </b-carousel>
         </b-card-text>
       </b-card>
@@ -54,6 +59,7 @@ export default {
       pos: 0,
       projects: [
         {
+          slide: 0,
           title: 'Gantt Chart',
           images: [
             { company: '탑아이엔디', date: '2018', description: '', image: require('@/assets/smart_factory/gantt_2018_top.png') },
@@ -62,6 +68,7 @@ export default {
           ]
         },
         {
+          slide: 0,
           title: 'Statistics',
           images: [
             { company: '청주폴리텍', date: '2018', description: '', image: require('@/assets/smart_factory/static_2018_cj.png') },
@@ -73,6 +80,7 @@ export default {
           ]
         },
         {
+          slide: 0,
           title: 'Monitoring',
           images: [
             { company: '성암기연', date: '2018', description: '', image: require('@/assets/smart_factory/monitoring_2018_sungam.png') },
@@ -82,6 +90,7 @@ export default {
           ]
         },
         {
+          slide: 0,
           title: 'Progress',
           images: [
             { company: 'SMA', date: '2017', description: '', image: require('@/assets/smart_factory/progress_2017_sma3.png') },
@@ -91,6 +100,7 @@ export default {
           ]
         },
         {
+          slide: 0,
           title: 'BOM',
           images: [
             { company: '원풍산업', date: '2018', description: '', image: require('@/assets/smart_factory/bom_2018_wnp.png') },
@@ -98,6 +108,7 @@ export default {
           ]
         },
         {
+          slide: 0,
           title: 'Mobile',
           images: [
             { company: '성암기연', date: '2018', description: '', image: require('@/assets/smart_factory/mobile_2018_sungam4.png') },
@@ -110,18 +121,21 @@ export default {
           ]
         },
         {
+          slide: 0,
           title: 'Quality',
           images: [
             { company: '성암기연', date: '2018', description: '', image: require('@/assets/smart_factory/quality_2018_sungam.png') }
           ]
         },
         {
+          slide: 0,
           title: 'Storage',
           images: [
             { company: 'DHAC', date: '2017', description: '', image: require('@/assets/smart_factory/storage_2017_dhac.png') }
           ]
         },
         {
+          slide: 0,
           title: 'Worklist',
           images: [
             { company: '원풍산업', date: '2018', description: '', image: require('@/assets/smart_factory/worklist_2018_wnp.png') },
@@ -132,6 +146,7 @@ export default {
           ]
         },
         {
+          slide: 0,
           title: 'Workplan',
           images: [
             { company: 'IJS', date: '2017', description: '', image: require('@/assets/smart_factory/workplan_2017_ijs.png') },

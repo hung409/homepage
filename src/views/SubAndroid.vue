@@ -1,16 +1,16 @@
 <template>
-  <div class="smart_factory_list">
-    <SmartFactoryList/>
+  <div class="android_list">
+    <AndroidList/>
   </div>
 </template>
 
 <script>
-import SmartFactoryList from "@/components/SmartFactoryList.vue";
+import AndroidList from "@/components/AndroidList.vue";
 
 export default {
   name: "home",
   components: {
-    SmartFactoryList
+    AndroidList
   }
 };
 </script>
