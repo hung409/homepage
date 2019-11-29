@@ -36,6 +36,7 @@
               v-for="sub_entry in entry.images"
               :key="sub_entry.image"
               :href="sub_entry.image"
+              target="_blank"
               >
               <b-carousel-slide
                 :caption="sub_entry.company + ', ' + sub_entry.date"

@@ -3,7 +3,8 @@
     <ul>
       <li class="item" v-for="entry in repos_list" :key="entry.title">
         <div class="title">{{ entry.title }}</div>
-        <a :href="entry.image">
+        <a :href="entry.image"
+          target="_blank">
           <b-img :src="entry.image" fluid :alt="entry.title"></b-img>
         </a>
         <div class="tag">{{ entry.tag }}</div>
