@@ -54,13 +54,9 @@ import i18n from '@/plugins/i18n';
 
 export default {
   name: "App",
-  props: {
-    msg: String
-  },
-  created: function () {
-  },
   data() {
     return {
+      LoadingStatus : false,
       menus: [
         {
           linkTo: '/',
