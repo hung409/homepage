@@ -33,8 +33,8 @@
           </div>
         </div>
 
-        <div class="items">
-          <h4 class="profile header">QR코드</h4>
+        <div class="items for_print">
+          <h4 class="profile header">홈페이지 QR코드</h4>
           <div class="hr"></div>
           <div class="item">
             <div class="nowrap content">
@@ -75,6 +75,7 @@
         </div>
       </section>
     </div>
+    <div class="for_print print_footer">QR 코드로 홈페이지를 방문하시면 프로젝트와 GitHub 자료를 보실 수 있습니다.</div>
   </div>
 </template>
 
@@ -89,7 +90,7 @@ export default {
         motto: '후회없이 살자',
         birth: '1988. 11. 11',
         info1: '웹 풀스택 개발자',
-        info2: '웹 개발, SW 개발, 운영 분야의 Ubuntu, Android, Kotlin에 관심',
+        info2: '웹 개발, SW 개발, 운영 분야의 Ubuntu, Android, Kotlin에 관심있습니다.',
         qrcode: require('@/assets/qrcode.png')
       },
       left_info: [
@@ -236,6 +237,7 @@ export default {
   border-top-right-radius: 5px;
   text-align: center;
   padding-top: 30px;
+  -webkit-print-color-adjust: exact;
   .me {
     height: 200px;
     width: 200px;
@@ -501,6 +503,13 @@ div.items {
   font-weight: bold;
   color: #555;
 }
+.print_footer {
+  height: 100px;
+  width: 100%;
+  padding: 30px;
+  font-weight: bold;
+  background: #c9c9c9;
+}
 @media (min-width: 768px) {
   div.main_container {
     display: flex;
@@ -530,6 +539,18 @@ div.items {
         flex: 100% 0 0;
       }
     }
+  }
+}
+
+@media screen {
+  .for_print {
+    display: none;
+  }
+}
+@media print {
+  .for_print {
+    display: block;
+    -webkit-print-color-adjust: exact;
   }
 }
 </style>

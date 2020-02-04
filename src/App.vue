@@ -46,6 +46,8 @@
     <div id="container">
       <router-view />
     </div>
+    <div id="footer">
+    </div>
   </div>
 </template>
 
@@ -163,5 +165,11 @@ export default {
   max-width: 1080px;
   text-align: left;
   zoom: 1;
+}
+
+#footer {
+  background-color: #0c0c13;
+  height: 100px;
+  width: 100%;
 }
 </style>
