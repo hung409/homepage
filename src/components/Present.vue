@@ -533,7 +533,7 @@ div, span {
 }
 @media (max-width: 767px) {
   div.items {
-    padding: 24px 0;
+    padding: 24px 5px;
   }
   .profile_list {
     &::before {
