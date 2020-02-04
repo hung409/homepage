@@ -176,9 +176,9 @@ export default {
         },{
           class: '',
           image: require('@/assets/project/화낙.jpg'),
-          title: 'FOCAS(FANUC NC Library)를 이용한 신호취득',
+          title: 'FOCAS를 이용한 신호취득',
           due: '2017년 6월 - 2018년 1월 | 8개월',
-          desc: '공작기계 컨트롤러 신호를 취득하여 모니터링 정확성 증가',
+          desc: 'FANUC 공작기계 컨트롤러 신호를 취득하여 모니터링 정확성 증가',
           skill: 'c++, nodejs'
         },{
           class: '',
@@ -427,6 +427,7 @@ div.items {
       .sub_title {
         font-size: 16px;
         font-weight: 700;
+        text-overflow: ellipsis;
       }
       p.date {
         margin: 0 0 .5em;
@@ -509,6 +510,10 @@ div.items {
   padding: 30px;
   font-weight: bold;
   background: #c9c9c9;
+}
+div, span {
+  white-space: normal;
+  text-overflow: ellipsis;
 }
 @media (min-width: 768px) {
   div.main_container {
