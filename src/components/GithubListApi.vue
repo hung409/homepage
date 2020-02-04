@@ -1,11 +1,13 @@
 <template>
   <div class="github_list">
-    <h3>{{ $t('goRepository') }}</h3>
-    <ul>
-      <li v-for="entry in repos_list" :key="entry.id">
-        <b-link :href="entry.html_url">{{ entry.name }}</b-link>
-      </li>
-    </ul>
+    <div class="repository">
+      <h4>{{ $t('goRepository') }}</h4>
+      <ul>
+        <li v-for="entry in repos_list" :key="entry.id">
+          <b-link :href="entry.html_url">{{ entry.name }}</b-link>
+        </li>
+      </ul>
+    </div>
   </div>
 </template>
 
@@ -32,6 +34,9 @@ export default {
 </script>
 
 <style scoped lang="scss">
+div.repository {
+  margin-top: 10px;
+}
 ul {
   list-style-type: none;
   padding: 10px 0;

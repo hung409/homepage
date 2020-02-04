@@ -237,6 +237,7 @@ export default {
   border-top-right-radius: 5px;
   text-align: center;
   padding-top: 30px;
+  margin-top: 10px;
   -webkit-print-color-adjust: exact;
   .me {
     height: 200px;
@@ -533,6 +534,15 @@ div, span {
 @media (max-width: 767px) {
   div.items {
     padding: 24px 0;
+  }
+  .profile_list {
+    &::before {
+      border-left: 0px;
+    }
+    &-item {
+      margin-left: -45px;
+      border-bottom: 1px solid #c9c9c9;
+    }
   }
   div.main_container {
     display: flex;

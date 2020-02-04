@@ -161,7 +161,6 @@ export default {
 
 #container {
   margin: 0 auto;
-  padding: 15px 10px 0;
   max-width: 1080px;
   text-align: left;
   zoom: 1;
