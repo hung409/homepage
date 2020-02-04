@@ -34,11 +34,11 @@
         </div>
 
         <div class="items for_print">
-          <h4 class="profile header">홈페이지 QR코드</h4>
-          <div class="hr"></div>
+          <h4 class="profile header">홈페이지</h4>
           <div class="item">
             <div class="nowrap content">
               <div class="break desc">
+                https://shyuni4u.github.io/homepage/dist/
                 <img :src="me.qrcode" />
               </div>
             </div>
@@ -531,6 +531,9 @@ div, span {
   }
 }
 @media (max-width: 767px) {
+  div.items {
+    padding: 24px 0;
+  }
   div.main_container {
     display: flex;
     flex-wrap: wrap;
