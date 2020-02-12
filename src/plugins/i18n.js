@@ -53,7 +53,7 @@ const messages = {
     menuProjectSubAndroid: `안드로이드`,
     menuStudy: `연구`,
     menuEtc: `기타`,
-    menuGithub: `깃허브`,
+    menuGithub: `Github`,
     presentName: `김선우`,
     presentBirthday: `1988. 11. 11`,
     presentMotto: `좌우명: 후회없이 살자`,

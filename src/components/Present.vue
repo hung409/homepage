@@ -8,6 +8,7 @@
     </div>
     <div class="main_container">
       <section class="career">
+        <!--
         <div class="items" v-for="l_info in left_info" :key="l_info.title">
           <h4 class="profile header">{{ l_info.header_title }}</h4>
           <span class="profile header_sub">{{ l_info.header_subtitle }}</span>
@@ -17,6 +18,40 @@
               <div class="nowrap sub_title">{{ l_info.content_title }}</div>
               <p class="date">{{ l_info.content_date }}</p>
               <div class="break desc" v-html="l_info.desc"></div>
+            </div>
+          </div>
+        </div>
+        -->
+
+        <div class="items">
+          <h4 class="profile header">경력</h4>
+          <span class="profile header_sub"></span>
+          <div class="hr"></div>
+          <div class="item">
+            <div class="nowrap content">
+              <div class="nowrap sub_title">큐빅테크</div>
+              <p class="date">2016년 11월 - 2019년 6월 | 2년 7개월</p>
+              <div class="break desc">스마트팩토리 담당업무를 맡아 MES개발, 리눅스 서버구축, FANUC 신호추출 프로젝트를 수행했습니다.</div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="nowrap content">
+              <div class="nowrap sub_title">공군 19비행단</div>
+              <p class="date">2009년 3월 - 2011년 4월 | 2년 1개월</p>
+              <div class="break desc">비행단 웹 서버 관리 및 이발예약, 체력관리 프로젝트 개발을 수행했습니다.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="items">
+          <h4 class="profile header">학력</h4>
+          <span class="profile header_sub"></span>
+          <div class="hr"></div>
+          <div class="item">
+            <div class="nowrap content">
+              <div class="nowrap sub_title">동국대학교 컴퓨터공학과</div>
+              <p class="date">2007년 - 2015년 졸업</p>
+              <div class="break desc"></div>
             </div>
           </div>
         </div>
@@ -222,6 +257,20 @@ export default {
           due: '2012년 1월 - 2012년 2월 | 2개월',
           desc: 'K-POP 아이돌 일정 보기 및 커뮤니티',
           skill: 'jQuery mobile'
+        },{
+          class: '',
+          image: require('@/assets/empty.png'),
+          title: '모두의 베팅',
+          due: '2011년 6월 - 2011년 12월 | 6개월',
+          desc: '모두의 베팅',
+          skill: 'jQuery mobile, jsp, kt cloud'
+        },{
+          class: '',
+          image: require('@/assets/empty.png'),
+          title: '비행단 웹 관리',
+          due: '2009년 3월 - 2011년 4월 | 2년 1개월',
+          desc: '비행단 웹 관리 및 프로그램 개발',
+          skill: 'linux, oracle, jsp'
         }
       ]
     }
