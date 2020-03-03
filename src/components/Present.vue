@@ -68,6 +68,8 @@
           </div>
         </div>
 
+        <github></github>
+
         <div class="items for_print">
           <h4 class="profile header">홈페이지</h4>
           <div class="item">
@@ -115,8 +117,11 @@
 </template>
 
 <script>
+import GithubListVue from './GithubList.vue'
+
 export default {
   name: 'present',
+  components: { 'github': GithubListVue },
   data: () => {
     return {
       me: {
@@ -146,6 +151,20 @@ export default {
       ],
       right_info: [
         {
+          class: '',
+          image: require('@/assets/empty.png'),
+          title: '하스스톤 전장 스트리머 통계 페이지',
+          due: '2020년 2월 - 2020년 2월 | 1개월',
+          desc: '전장 스트리머 로그 페이지 개발: https://shyuni4u.github.io/BattlegroundLab/dist/',
+          skill: 'vuejs'
+        },{
+          class: '',
+          image: require('@/assets/empty.png'),
+          title: '코로나 확진자 정보 크롤링',
+          due: '2020년 2월 - 2020년 2월 | 1개월',
+          desc: '코로나 확진자 정보 크롤링을 통한 API 생성',
+          skill: 'AWS RDS, AWS Lambda'
+        },{
           class: 'android',
           image: require('@/assets/project/OverCam.png'),
           title: '오버캠',
