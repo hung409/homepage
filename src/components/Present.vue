@@ -68,7 +68,7 @@
           </div>
         </div>
 
-        <github></github>
+        <!-- <github></github> -->
 
         <div class="items for_print">
           <h4 class="profile header">홈페이지</h4>
@@ -117,11 +117,11 @@
 </template>
 
 <script>
-import GithubListVue from './GithubList.vue'
+//import GithubListVue from './GithubList.vue'
 
 export default {
   name: 'present',
-  components: { 'github': GithubListVue },
+  //components: { 'github': GithubListVue },
   data: () => {
     return {
       me: {
